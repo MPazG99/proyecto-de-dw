@@ -11,3 +11,17 @@ main{
         max-width: 80%;
     }
 }
+
+
+@import "base/variables";
+@import "base/mapas";
+@import "base/mixin";
+@import "base/extend";
+
+h1{
+    color: $color-principal;
+}
+
+.logo img{
+    width: $medida-logo;
+}
