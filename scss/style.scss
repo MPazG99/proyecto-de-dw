@@ -39,3 +39,51 @@ h1{
 .logo img{
     width: $medida-logo;
 }
+
+.ult-seccion{
+   @extend %grid;
+}
+
+.p-inicio{
+    @include parrafos;
+}
+
+.enologo{
+    @include parrafos;
+
+}
+
+.parrafo1-nos{
+    @include parrafos;
+
+}
+
+.ingeniero{
+    @include parrafos;
+
+}
+
+.horarios{
+    @include parrafos;
+    @include centrar-visita;
+}
+
+.como-llegar{
+    @extend %mapas-y-texto;
+}
+
+.imgMendoza img{
+    @include img-secundarias;
+}
+
+.cyp .costa{
+    @include parrafos;
+}
+
+.gran-medalla .parr-medalla{
+    @include parrafos;
+}
+
+.iscay .parrafo {
+    @include parrafos;
+}
