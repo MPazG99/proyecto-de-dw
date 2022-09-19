@@ -17,26 +17,27 @@ section p {
   width: 100%;
   max-width: 80%; }
 
-/*$boton-encontra{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1em;
-    color: $color-secundario;
-    text-decoration: none;
-}*/
+img{
+  max-width: 100%;
+}
+
+p{
+  font-size: 18px;
+}
 
 
 .como-llegar {
   font-size: x-large;
   margin-top: 50px;
   width: 100%;
-  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "mapa horarios";
   justify-content: center;
   justify-items: center;
-  padding: auto; }
+  padding: auto; 
+  margin-bottom: 80px;}
 
 h1 {
   color: #A43B50; }
@@ -72,11 +73,11 @@ h1 {
 
 .p-inicio {
   text-align: center;
-  margin:0 0 50px 200px;
   width: 100%;
   max-width: 80%;
   font-size: x-large;
-  color: #666; 
+  color: #666;
+  margin: 0 auto; 
 }
 
 .subtitulo h2{
@@ -123,31 +124,40 @@ h1 {
   color: #666;
   margin: 60px 0px 20px; }
 
-.imgMendoza img {
-  width: 95%;
-  margin: 20px 20px 20px 50px; }
+  .imgMendoza img {
+    width: 100%;
+    margin: 20px 0;
+}
 
 .cyp .costa {
   text-align: center;
-  width: 50%;
-  margin: 50px 0 0 500px;
-  font-size: x-large;
-  color: #666; }
+    width: 100%;
+    max-width: 944px;
+    margin: 50px auto;
+    font-size: x-large;
+    color: #666;}
+
 
 .gran-medalla .parr-medalla {
   text-align: center;
-  width: 50%;
-  margin: 50px 0 0 500px;
+  width: 100%;
+  max-width: 944px;
+  margin: 50px auto;
   font-size: x-large;
-  color: #666; }
+  color: #666;}
 
 .iscay .parrafo  {
   text-align: center;
-  width: 50%;
-  margin: 50px 0 0 500px;
-  font-size: x-large;
-  color: #666;
+    width: 100%;
+    max-width: 944px;
+    margin: 50px auto;
+    font-size: x-large;
+    color: #666;
 }
+
+.formulario .titulo-form h1 {
+  color: #851c1c; }
+
 
   .iscay h2{
     text-align: center;
@@ -167,11 +177,12 @@ h1 {
   }
   
   .im-secundarias{
-    display: inline-grid;
-    grid-template-columns:  300px 300px ;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: "img img ";
-    margin: 70px 0px 0px 750px;
+    margin: 70px auto;
+    max-width: 500px;
   
   }
   
@@ -197,11 +208,11 @@ h1 {
   }
   
   .secundarias-medalla{
-    display: inline-grid;
-    grid-template-columns:  300px 300px 300px 300px 300px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "img img img img img";
-    margin: 70px 0px 0px 350px;
+    margin: 70px auto;
+    max-width: 1000px;
   }
   
   .secundarias-medalla img{
@@ -225,11 +236,11 @@ h1 {
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;}
   
   .secundarias-costa {
-    display: inline-grid;
-    grid-template-columns:  300px 300px 300px 300px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-template-areas: " img img img img ";
-    margin: 70px 0px 0px 450px;
+     margin: 70px auto;
+    max-width: 1000px;
    
   }
   .secundarias-costa img{
@@ -256,10 +267,11 @@ h1 {
 
 .estacion{
   text-align: center;
-  width: 50%;
-  margin: 20px 0 20px 500px;
+  width: 100%;
   font-size: x-large;
   color: #666;
+  max-width: 1326px;
+  margin: 20px auto 20px auto;
 }
 
 .sentidos h1{
@@ -267,17 +279,17 @@ h1 {
   margin-top: 50px;
 }
 
-.sentidos .par-sentidos{
+.sentidos .par-sentidos {
   text-align: center;
-  width: 50%;
-  margin: 20px 0 20px 500px;
+  width: 100%;
   font-size: x-large;
   color: #666;
+  max-width: 1326px;
+  margin: 20px auto 20px auto;
 }
 
 .recuadro .mas-img img{
-  width: 500px;
-  margin: 20px;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
@@ -323,23 +335,28 @@ h1 {
 }
 
 .ult-seccion {
-  display: inline-grid;
-  grid-template-columns:  700px 700px ;
+  display: grid;
+  grid-template-columns:  1fr 1fr ;
   grid-template-rows: auto;
   grid-template-areas: "mapa-restaurant reserva ";
   margin-top: 50px;
   margin-bottom: 20px;
+  align-items: center;
 }
 
-.est-83{
+.mapa-restaurant img{
+  text-align: center;
+}
+
+.est-83 {
   display: flex;
   justify-content: space-between;
   width: 100%;
-   
+  flex-wrap: wrap;
 }
 
 .est-83 img{
-  width: 700px;
+  width: 33.33%;
 }
 
 
@@ -381,3 +398,84 @@ h1 {
     margin-bottom: 10%;
 
   }
+
+
+@media only screen and (max-width: 910px) {
+  .como-llegar{
+    display: block;
+    text-align: center;
+  }
+
+  .horarios{
+    margin: 0 auto;
+    padding-top: 50px;
+  }
+
+  .ult-seccion{
+    display: block;
+    text-align: center;
+  }
+
+  .ult-seccion .reserva{
+    margin-top: 50px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+.est-83{
+  display: block;
+ 
+}
+
+.im-secundarias{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+
+}
+
+.secundarias-medalla{
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.secundarias-medalla img{
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.secundarias-costa{
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.secundarias-costa img{
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.est-83 img{
+  width: 100%;
+}
+
+
+}
+
+@media (max-width: 600px){
+
+  .iscay-img img{
+    max-width: 100%;
+  }
+  
+  .medalla img{
+    max-width: 100%;
+
+  }
+
+  .costa-y-pampa img{
+    max-width: 100%;
+  }
+}

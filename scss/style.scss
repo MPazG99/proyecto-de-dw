@@ -28,7 +28,7 @@ section{
 
 
 @import "base/variables";
-@import "base/mapas";
+@import "base/listas";
 @import "base/mixin";
 @import "base/extend";
 
@@ -86,4 +86,8 @@ h1{
 
 .iscay .parrafo {
     @include parrafos;
+}
+
+.formulario .titulo-form h1{
+    color: nth($colores, 2);
 }
